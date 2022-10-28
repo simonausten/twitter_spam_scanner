@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "twitter-spam-scanner"
+version = "0.1.0"
+description = ""
+authors = ["Simon Austen <hello@simonausten.me>"]
+readme = "README.md"
+packages = [{include = "twitter_spam_scanner"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+tweepy = "^4.11.0"
+slack-sdk = "^3.19.2"
+google-cloud-pubsub = "^2.13.10"
+pendulum = "^2.1.2"
+google-cloud-datastore = "^2.9.0"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^5.0.4"
+mypy = "^0.982"
+black = "^22.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
